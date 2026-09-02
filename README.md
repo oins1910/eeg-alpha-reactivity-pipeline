@@ -145,3 +145,29 @@ Data were obtained from the **EEG Motor Movement/Imagery Dataset (EEGMMIDB), ver
 Schalk, G. (2009). *EEG Motor Movement/Imagery Dataset* (version 1.0.0). PhysioNet. RRID:SCR_007345. https://doi.org/10.13026/C28G6P
 
 The dataset files are distributed under the **Open Data Commons Attribution License v1.0**. Raw EEG recordings are not redistributed in this repository; they are retrieved programmatically through MNE-Python.
+
+## How to Reproduce
+The analysis can be reproduced from the clean notebook included in this repository. Raw EEG files are not stored in the repository; the required EEGMMIDB recordings are retrieved programmatically through MNE-Python.
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/oins1910/eeg-alpha-reactivity-pipeline.git
+   cd eeg-alpha-reactivity-pipeline
+   ```
+
+2. Create and activate a Python virtual environment.
+
+3. Install the required packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Open and run:
+
+   ```text
+   notebooks/02_reproducible_analysis.ipynb
+   ```
+
+Running the notebook reproduces the participant-level alpha metrics, development and held-out statistical summaries, and the held-out validation figure. Internet access is required when the EEGMMIDB recordings are downloaded for the first time.
