@@ -136,3 +136,12 @@ This project was developed as a practical introduction to reproducible EEG analy
 - reproducible scientific programming and transparent documentation.
 
 The project also illustrates the importance of distinguishing exploratory analytical decisions from a subsequently frozen pipeline, retaining inter-individual variability rather than excluding unexpected results solely on the basis of outcome magnitude, and communicating methodological limitations explicitly.
+
+## Data Source and Citation
+Data were obtained from the **EEG Motor Movement/Imagery Dataset (EEGMMIDB), version 1.0.0**, hosted by PhysioNet.
+
+**Recommended citation:**
+
+Schalk, G. (2009). *EEG Motor Movement/Imagery Dataset* (version 1.0.0). PhysioNet. RRID:SCR_007345. https://doi.org/10.13026/C28G6P
+
+The dataset files are distributed under the **Open Data Commons Attribution License v1.0**. Raw EEG recordings are not redistributed in this repository; they are retrieved programmatically through MNE-Python.
